@@ -1,0 +1,23 @@
+@import "../base/variables";
+
+.wrapper {
+  padding-left: 18px;
+  overflow: hidden;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+  &--medium {
+    max-width: 976px;
+  }
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &--b-margin {
+    margin-bottom: 4rem;
+    @media (min-width: 530px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
