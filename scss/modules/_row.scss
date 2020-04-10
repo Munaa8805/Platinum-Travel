@@ -1,13 +1,28 @@
 @import "../base/variables";
 .row {
+  &--t-padding {
+    padding-top: 80px;
+  }
   &--gutters > div {
     padding-right: 65px;
   }
   &--gutters {
     margin-right: -65px;
   }
+  &--gutters-large > div {
+    padding-right: 120px;
+  }
+  &--gutters-large {
+    margin-right: -120px;
+  }
   &__b-margin-until-medium {
     margin-bottom: 1rem;
+  }
+  &--gutters-small > div {
+    padding-right: 45px;
+  }
+  &--gutters-small {
+    margin-right: -45px;
   }
 
   @media (min-width: 800px) {
@@ -27,6 +42,24 @@
     }
     &__medium-8--smaller {
       width: 63%;
+    }
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+    &__medium-6 {
+      float: right;
+      width: 50%;
+    }
+  }
+  //// Ijil ondortei blockuudiin ondor
+  &--equal-height-at-medium {
+    @media (min-width: 800px) {
+      display: flex;
+    }
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }

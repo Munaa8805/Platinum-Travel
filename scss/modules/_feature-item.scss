@@ -1,0 +1,28 @@
+@import "../base/variables";
+.feature-item {
+  position: relative;
+  padding-bottom: 3rem;
+  @media (min-width: 530px) {
+    padding-left: 95px;
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    @media (min-width: 530px) {
+      position: absolute;
+      left: 0;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-top: 0.8em;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+    @media (min-width: 530px) {
+      font-size: 1.85rem;
+      margin-top: 1em;
+      text-align: left;
+    }
+  }
+}

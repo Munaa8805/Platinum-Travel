@@ -1,0 +1,48 @@
+@import "../base/variables";
+.primary-nav {
+  padding-top: 10px;
+  @media (min-width: 800px) {
+    padding-top: 0px;
+  }
+  &--pull-right {
+    float: none;
+    @media (min-width: 800px) {
+      float: right;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    clear: both;
+  }
+  li {
+    list-style: none;
+    float: none;
+    display: inline-block;
+    padding-right: 20px;
+    @media (min-width: 800px) {
+      float: left;
+      display: block;
+    }
+    li::lastchild {
+      padding-right: 0;
+      @media (min-width: 800px) {
+        padding-right: 20px;
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      display: block;
+      font-size: 0.8rem;
+      background-color: rgba($mainBlue, 0.5);
+      padding: 5px 8px;
+      @media (min-width: 800px) {
+        font-size: 1rem;
+        padding: 12px 0;
+        background-color: transparent;
+      }
+    }
+  }
+}
